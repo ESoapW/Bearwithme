@@ -1,0 +1,109 @@
+body {
+  height: 100%;
+}
+.content{
+position: relative;
+width: 100%;
+background-color: #ffffff;
+}
+.blueboard{
+    position: absolute;
+    height:50vh;
+    width: 100%;
+    background-color: #f3488b;
+}
+.textboard{
+    position: relative;
+    background-color: #f0e6ee;
+    border:20px solid #eeeeee;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.topboard{
+    height:120px;
+}
+.bottomboard{
+    height: 80px;
+}
+
+#name {
+  font-family: Lithos pro;
+  position: relative;
+  left: 3%;
+  color: black;
+  top: 0px;
+}
+
+#top1 {
+  font-family: Lithos pro;
+  position: relative;
+  left: 0%;
+  color: white;
+  top: 0px;
+}
+
+#logo-container {
+  position: relative;
+  top: 10px;
+}
+
+@media (max-width: 600px) {
+  #name {
+    align-content: center;
+    top: 0px;
+    left: 20%;
+  }
+  #logo-container {
+    position: absolute;
+    right: 0%;
+    top: 10px;
+  }
+
+  #section1 {
+    display: none;
+  }
+  .fixed-action-btn {
+    right:10px;
+  }
+
+
+}
+
+.index-font{
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.table-of-contents a {
+  display: inline-block;
+  font-weight: 300;
+  color: #76bcff;
+  padding-left: 16px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: .4;
+  display: inline-block;
+}
+
+.table-of-contents a:hover {
+  color: #a8a8a8;
+  padding-left: 15px;
+  border-left: 1px solid #a3d2ff;
+}
+
+.table-of-contents a.active {
+  font-weight: 500;
+  padding-left: 14px;
+  border-left: 2px solid #a3d2ff;
+}
+
+
+
+.bordered a{
+  color: black;
+}
+
+.bordered a:hover{
+  color: #67a3ff;
+}

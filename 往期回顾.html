@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bear with me</title>
+
+    <!-- CSS  -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="css/amberboard.css">
+    <style type="text/css">
+        .dropdown-content li>a,
+        .dropdown-content li>span {
+            color: #ff9d2a;
+        }
+
+        .select-wrapper input.select-dropdown:focus {
+            border-bottom: 1px solid #ff9d2a;
+        }
+
+        .datepicker-date-display {
+            background-color: #ff9d2a;
+        }
+
+        .datepicker-table td.is-selected {
+            background-color: #ff9d2a;
+        }
+
+        .datepicker-table td.is-today {
+            color: #ff9d2a;
+        }
+
+        .datepicker-cancel,
+        .datepicker-clear,
+        .datepicker-today,
+        .datepicker-done {
+            color: #ff9d2a;
+        }
+    </style>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+    <script src="js/滚动监视.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel();
+            $('.carousel.carousel-slider').carousel({ indicators: true });
+        });
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <div>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger" id="bluenav">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
+                <a id="logo-container" href="#">
+                    <img src="img/event1_03.png" height="40px" alt="Bear with me Logo">
+                </a>
+                <span>
+                    <a id="name" style="top:-3px"> BEAR WITH ME </a>
+                </span>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="login.html">登录/注册</a>
+                    </li>
+                    <li>
+                        <a href="kepu.html">科普</a>
+                    </li>
+                    <li>
+                        <a href="活动首页.html" style="color:#ff9d2a">活动</a>
+                    </li>
+                    <li>
+                        <a href="用户中心.html">个人中心</a>
+                    </li>
+                    <li>
+                        <a href="我的羁绊.html">我的羁绊</a>
+                    </li>
+                </ul>
+
+                <ul id="nav-mobile" class="sidenav">
+                        <li>
+                                <a href="login.html">登录/注册</a>
+                            </li>
+                            <li>
+                                <a href="kepu.html">科普</a>
+                            </li>
+                            <li>
+                                <a href="活动首页.html" style="color:#ff9d2a">活动</a>
+                            </li>
+                            <li>
+                                <a href="用户中心.html">个人中心</a>
+                            </li>
+                            <li>
+                                <a href="我的羁绊.html">我的羁绊</a>
+                            </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+
+        <div class="blueboard"></div>
+        <div class="topboard"></div>
+        <div class="container textboard z-depth-3">
+            <div style="margin-top: 40px;padding-left: 20px;padding-right: 20px;margin-bottom: 40px; position: relative;" align="center">
+                <a href="活动首页.html" style="position: absolute; top: 2px;left: 10px;">
+                    <i class="material-icons amber-text text-amber-darken-2">arrow_back</i>
+                </a>
+                <span style="font-size: 24px;color: #ff9d2a;">往期回顾</span>
+            </div>
+
+            <hr style="border:none; height: 1px; background-color: #ff9d2a" />
+            <div style="height: 30px;"></div>
+
+            <div class="row">
+                <div class="row">
+                    <div class="col s9">
+                        <p style="font-family: Lithos pro;font-size: 85px;">BEAR WITH ME</p>
+                    </div>
+                    <div class="col s3;" style="margin-left:-20px;">
+                        <div class="input-field">
+                            <select>
+                                <option value="" disabled selected>Choose your location</option>
+                                <option value="1">北京</option>
+                                <option value="2">上海</option>
+                                <option value="3">成都</option>
+                                <option value="3">西藏</option>
+                            </select>
+                            <label>地点</label>
+                        </div>
+
+                        <input type="text" class="datepicker" value="date">
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col s3" style="padding-right: 10px;">
+                        <img src="img/往期回顾1.png">
+                    </div>
+                    <div class="col s9" style="position: relative;">
+                        <a href="活动详情.html">
+                            <p style="font-size: 16px;">“爱,点亮孤独的星”——北京邮电大学开展世界自闭症日蓝色活动</p>
+                        </a>
+                        <p style="color: #ffd8af;font-size: 14px;">2017年4月2日</p>
+                        <div style="font-size: 16px;">
+                            <p style="color: #be5d19;"> 2016年4月2日是第九个“世界自闭症日”，北京邮电大学实验学院经济管理学院的国际经济与贸易专业学生举办了一场 主题为“做一天百分之一”的关爱自闭症儿童“蓝色行动”，通过普及和宣传自闭症知识，爱心义卖、倡导全社会关注和帮助
+                                自闭症儿童。
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col s3" style="padding-right: 10px;">
+                        <img src="img/往期回顾2.png">
+                    </div>
+                    <div class="col s9" style="position: relative;">
+                        <p style="font-size: 16px;">同在蓝天下我们共成长自闭症儿童庆六一活动</p>
+                        <p style="color: #ffd8af;font-size: 14px;">2017年6月1日</p>
+                        <div style="font-size: 16px;">
+                            <p style="color: #be5d19;"> 今天是孩子们的节日—6.1儿童节，6月1日下午2点在宏远启智演播大厅举行同在蓝天下 我们共成长庆祝六一儿童节活动， 虽然这些孩子在心灵上有障碍，他们也向往着和正常孩子一样过着属于他们自己的节日。
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col s3" style="padding-right: 10px;">
+                        <img src="img/往期回顾3.png">
+                    </div>
+                    <div class="col s9" style="position: relative;">
+                        <p style="font-size: 16px;">情系星星的你 爱满折翼天使——北京青檬志愿者联盟关爱自闭症儿童</p>
+                        <p style="color: #ffd8af;font-size: 14px;">2017年11月1日</p>
+                        <div style="font-size: 16px;">
+                            <p style="color: #be5d19;"> 　 2017年11月1日，北京青檬志愿者联盟携手通州区潞邑·青年汇，招募社会青年关爱志愿者40人，来到北京青檬志愿者联盟 志愿者实训基地即宏远启智自闭症儿童康复中心(以下简称;爱心基地)，为爱心基地的孤独症儿童进行心里干预服务。
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="bottomboard"></div>
+        </div>
+
+
+
+
+        <footer style="background-color:#ffd8af;color: #be5d19;" class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l1 s12"></div>
+
+                    <div class="col l2 s12">
+                        <h5 class="yellow-text text-darken-4" style="font-size:18px;font-weight:bold">关于我们</h5>
+                        <ul>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">诚聘英才</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">投资公司</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">社会责任</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l2 s12">
+                        <h5 class="yellow-text text-darken-4" style="font-size:18px;font-weight:bold">联系我们</h5>
+                        <ul>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">微信账号</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">联系电话</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">平台邮箱</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col l2 s12">
+                        <h5 class="yellow-text text-darken-4" style="font-size:18px;font-weight:bold">服务支持</h5>
+                        <ul>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">常见问题</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">技术支持</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">其他服务</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col l2 s12">
+                        <h5 class="yellow-text text-darken-4" style="font-size:18px;font-weight:bold">最新消息</h5>
+                        <ul>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">新闻</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">获奖</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">社群</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col l2 s12">
+                        <h5 class="yellow-text text-darken-4" style="font-size:18px;font-weight:bold">友情链接</h5>
+                        <ul>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">志愿中国</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">志愿北京</a>
+                            </li>
+                            <li>
+                                <a class="yellow-text text-darken-4" href="#!">志愿青年</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l1 s12"></div>
+
+
+
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container" style="text-align:center">
+                    Made by
+                    <a class="brown-text text-lighten-3" href="#">Bears</a>
+                </div>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>

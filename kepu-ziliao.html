@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bear with me</title>
+
+  <!-- CSS  -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="css/blueboard.css">
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript" src="js/demo.js"></script>
+  <script src="js/滚动监视.js"></script>
+
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <div>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger" id="bluenav">
+            <i class="material-icons">menu</i>
+          </a>
+        </div>
+        <a id="logo-container" href="#">
+          <img src="img/bluelogo.png" height="40px" alt="Bear with me Logo">
+        </a>
+        <span>
+          <a id="name" style="top:-3px"> BEAR WITH ME </a>
+        </span>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="login.html">登录/注册</a>
+          </li>
+          <li>
+            <a href="kepu.html" style="color:#3d9fff">科普</a>
+          </li>
+          <li>
+            <a href="活动首页.html">活动</a>
+          </li>
+          <li>
+            <a href="用户中心.html">个人中心</a>
+          </li>
+          <li>
+            <a href="我的羁绊.html">我的羁绊</a>
+          </li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li>
+            <a href="login.html">登录/注册</a>
+          </li>
+          <li>
+            <a href="kepu.html" style="color:#3d9fff">科普</a>
+          </li>
+          <li>
+            <a href="活动首页.html">活动</a>
+          </li>
+          <li>
+            <a href="用户中心.html">个人中心</a>
+          </li>
+          <li>
+            <a href="我的羁绊.html">我的羁绊</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div class="blueboard"></div>
+    <div class="topboard"></div>
+    <div class="container textboard z-depth-3 row">
+      <div class="row">
+        <div class="col s2">
+          <div style="height: 100px">&nbsp;</div>
+
+          <table class="bordered">
+            <tbody>
+              <tr>
+                <td><a href="#" style="color: #67a3ff">资料</a></td>
+              </tr>
+              <tr>
+                <td><a href="kepu-yingpian.html">影片</td>
+              </tr>
+              <tr>
+                <td><a href="kepu-yanjiu.html">研究</td>
+              </tr>
+              <tr>
+                <td><a href="kepu-hudong.html">互动</td>
+              </tr>
+              <tr>
+                <td><a href="kepu-wenda.html">问答</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="col s10">
+          <div style="padding-top: 10px;">
+            <img style="position: relative; top: 10px" src="img/bluelinelogo.png">
+            <span style="font-size: 40px;color: #3d9fff;padding-top: 10px;">资料</span>
+          </div>
+          <hr style="background-color: #3d9fff; height: 1px;border:none;" />
+          <div class="row">
+              <div class="col s12 m9 l10">
+                  <div id="introduction" class="section scrollspy row" style="height: auto;">
+                    <h4 class="col s12">基本概念</h4>
+                    <div class="col s1"></div>
+                    <div class="col s11">
+                        <p>孤独症（autism），又称自闭症或孤独性障碍（autistic disorder）等，
+                            是广泛性发育障碍（pervasive developmental disorder，PDD）的代表性疾病。
+                            《DSM-IV-TR》将PDD分为5种：孤独性障碍、Retts综合征、童年瓦解性障碍、
+                            Asperger综合征和未特定的PDD。其中，孤独性障碍与Asperger综合征较为常见。
+                            孤独症的患病率报道不一，一般认为约为儿童人口的2～5/万人，
+                            男女比例约为3：1～4：1，女孩症状一般较男孩严重。</p>
+                        <img src="img/ziliao1.png" style="width: 100%">
+                    </div>
+
+                  </div>
+
+                  <div id="structure" class="section scrollspy row" style="height: auto;">
+                      <h4 class="col s12">认识过程</h4>
+                      <div class="col s1"></div>
+                      <div class="col s11">
+                          <p>临床上首次描述孤独症是在20世纪40年代。1943年，美国医生Kanner报道了11例患者，并命名为“早期婴儿孤独症”（early infantile autism）。他当时描述这个类群的患者特征如下：严重缺乏与他人的情感接触；怪异的、重复性的仪式性行为；缄默或语言显著异常；高水平的视觉——空间技巧或机械记忆能力与在其他方面学习困难形成对比；聪明、机敏且具有吸引力的外貌表现。最初，Kanner报道的这类患者被认为是儿童精神分裂症的一个亚型而未受重视。在20世纪40～60年代，又有数人描述了与Kanner报道相似的病例，并冠以各种各样的名称。当时的国际及美国精神病分类与诊断标准将这类患者归入“儿童分裂样反应”类别中。对于孤独症的病因学，当时普遍认为是父母养育方式不当造成了孤独症的发生。Kanner将孤独症患儿的父母描述成一群高学历的、事业心很强但又冷漠无情的人，这一观点在当时似乎很少有异议。
+                              20世纪60～70年代，Rutter的研究指出，孤独症的行为如果被认为是从出生到童年早期的发育障碍所致则更为合情合理。由此，逐渐把孤独症看作为是一种躯体性的、与父母抚育方式无任何关联的发育障碍。在此时期，Lotter发表了新的孤独症诊断标准，强调把社会交互作用、言语与交流和重复性活动三个方面作为基本标准，并舍弃了Kanner诊断标准中关于“特殊技能和吸引人的外貌”等两项。以后，在Lotter标准的基础上，开展了广泛的流行病学调查研究。现在所普遍接受的“孤独症发病率4～5/万”是当时最重要的研究成果。
+                              20世纪80年代，关于孤独症的研究进入全新阶段。人们开始抛弃所谓“父母抚养方式不当”的病因假说，从生物学领域探索孤独症的病因，并在临床症状的识别和临床诊断方面将孤独症与精神分裂症彻底分开。Kolvin的研究表明，孤独症同成年精神病性障碍，尤其是成年精神分裂症没有关系。1980年出版的《DSM-Ⅲ》首次将童年孤独症视为一种广泛性发育障碍。之后，随着对孤独症研究的深入，逐步认识到孤独症是一种在一定遗传因素作用下，受多种环境因子刺激导致的弥漫性中枢神经系统发育障碍性疾病。在此认识的基础上，开展了从分子遗传到神经免疫、功能影像、神经解剖和神经化学等多方面的研究，人们试图从这些研究中找到孤独症的致病原因。但直至目前，仍没有任何一种假说能从根本上完美地解释孤独症的病因。
+                          </p>
+
+                      </div>
+
+                  </div>
+
+                  <div id="initialization" class="section scrollspy row" style="height: auto;">
+                      <h4 class="col s12">临床表现</h4>
+
+                      <div class="col s1"></div>
+                      <div class="col s11">
+                          <img src="img/ziliao2.png" style="width: 100%">
+                          <h4>社会交往障碍</h4>
+                          <p>
+                              该症患儿在社会交往方面存在质的缺陷。在婴儿期，患儿回避目光接触，对人的声音缺乏兴趣和反应，没有期待被抱起的姿势，或抱起时身体僵硬、不愿与人贴近。在幼儿期，患儿仍回避目光接触，呼之常无反应，对父母不产生依恋，缺乏与同龄儿童交往或玩耍的兴趣，不会以适当的方式与同龄儿童交往，不能与同龄儿童建立伙伴关系，不会与他人分享快乐，遇到不愉快或受到伤害时也不会向他人寻求安慰。学龄期后，随着年龄增长及病情改善，患儿对父母、同胞可能变得友好而有感情，但仍明显缺乏主动与人交往的兴趣和行为。虽然部分患儿愿意与人交往，但交往方式仍存在问题，他们对社交常情缺乏理解，对他人情绪缺乏反应，不能根据社交场合调整自己的行为。成年后，患儿仍缺乏交往的兴趣和社交的技能，不能建立恋爱关系和结婚。
+                           </p>
+                           <h4>交流障碍</h4>
+                              <p>   1．非言语交流障碍<br/>
+
+                              该症患儿常以哭或尖叫表示他们的不舒适或需要。稍大的患儿可能会拉着大人手走向他想要的东西缺乏相应的面部表情，表情也常显得漠然，很少用点头、摇头、摆手等动作来表达自己的意愿。
+                              <br/>2．言语交流障碍<br/>
+                              该症患儿言语交流方面存在明显障碍，包括：①语言理解力不同程度受损；②言语发育迟缓或不发育，也有部分患儿2-3岁前曾有表达性言语，但以后逐渐减少，甚至完全消失；③言语形式及内容异常：患儿常常存在模仿言语、刻板重复言语，语法结构、人称代词常用错，语调、语速、节律、重音等也存在异常；④言语运用能力受损：部分患儿虽然会背儿歌、背广告词，但却很少用言语进行交流，且不会提出话题、维持话题或仅靠刻板重复的短语进行交谈，纠缠于同一话题。
+                              </p>
+                              <h4>兴趣狭窄及刻板重复的行为方式</h4>
+                              <p>
+                                  该症患儿对一般儿童所喜爱的玩具和游戏缺乏兴趣，而对一些通常不作为玩具的物品却特别感兴趣，如车轮、瓶盖等圆的可旋转的东西。有些患儿还对塑料瓶、木棍等非生命物体产生依恋行为。患儿行为方式也常常很刻板，如：常用同一种方式做事或玩玩具，要求物品放在固定位置，出门非要走同一条路线，长时间内只吃少数几种食物等。并常会出现刻板重复的动作和奇特怪异的行为，如：重复蹦跳、将手放在眼前凝视、扑动或用脚尖走路等。
+                             </p>
+                              <h4>其他症状</h4>
+                            <p>约3/4该症患儿存在精神发育迟滞。约1/3-1/4患儿合并癫痫。部分患儿在智力低下的同时可出现“孤独症才能”，如在音乐、计算、推算日期、机械记忆和背诵等方面呈现超常表现，被称为“白痴学者”。
+                            </p>
+
+                      </div>
+                  </div>
+                </div>
+                <div class="col hide-on-small-only m3 l2">
+                    <div style="height: 1px;">
+                        <ul class="section table-of-contents fixed" id="rightnav">
+                            <li ><a href="#introduction">基本概念</a></li>
+                  <li><a href="#structure">认识过程</a></li>
+                  <li><a href="#initialization">临床表现</a></li>
+                  </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+
+  </div>
+  <div class="bottomboard"></div>
+  </div>
+
+
+
+
+  <footer style="background-color:#aee3f9" class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l1 s12"></div>
+
+        <div class="col l2 s12">
+          <h5 class="white-text" style="font-size:18px;font-weight:bold">关于我们</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">诚聘英才</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">投资公司</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">社会责任</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l2 s12">
+          <h5 class="white-text" style="font-size:18px;font-weight:bold">联系我们</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">微信账号</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">联系电话</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">平台邮箱</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col l2 s12">
+          <h5 class="white-text" style="font-size:18px;font-weight:bold">服务支持</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">常见问题</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">技术支持</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">其他服务</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col l2 s12">
+          <h5 class="white-text" style="font-size:18px;font-weight:bold">最新消息</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">新闻</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">获奖</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">社群</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col l2 s12">
+          <h5 class="white-text" style="font-size:18px;font-weight:bold">友情链接</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">志愿中国</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">志愿北京</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">志愿青年</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l1 s12"></div>
+
+
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container" style="text-align:center">
+        Made by
+        <a class="brown-text text-lighten-3" href="#">Bears</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

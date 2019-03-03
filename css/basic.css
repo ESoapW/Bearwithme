@@ -1,0 +1,83 @@
+body {
+  height: 100%;
+}
+
+.content{
+position: relative;
+z-index: -2;
+width: 100%;
+background-color: #ffffff;
+padding-bottom: 200px;
+}
+
+.pinkboard{
+    position: absolute;
+    height:50vh;
+    width: 100%;
+    background-color: #f3488b;
+    z-index: -1;
+}
+.textboard{
+    z-index: 0;
+    height:800px;
+    background-color: #fff;
+    border:20px solid #ffb9dc;
+
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.topboard{
+    height:120px;
+}
+.bottomboard{
+    height: 80px;
+}
+
+#name {
+  font-family: Lithos pro;
+  position: relative;
+  left: 3%;
+  color: black;
+  top: 0px;
+}
+
+#top1 {
+  font-family: Lithos pro;
+  position: relative;
+  left: 0%;
+  color: white;
+  top: 0px;
+}
+
+#logo-container {
+  position: relative;
+  top: 10px;
+}
+
+@media (max-width: 600px) {
+  #name {
+    align-content: center;
+    top: 0px;
+    left: 20%;
+  }
+  #logo-container {
+    position: absolute;
+    right: 0%;
+    top: 10px;
+  }
+
+  #section1 {
+    display: none;
+  }
+  .fixed-action-btn {
+    right:10px;
+  }
+
+
+}
+
+.index-font{
+  text-align: center;
+  font-size: 15px;
+}
+
