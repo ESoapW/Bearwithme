@@ -9,7 +9,7 @@
 	$('.sendBtn').on('click',function(){
 		var news=$('#dope').val();
 		if(news==''){
-			alert('不能为空');
+			alert('Can not be empty');
 		}else{
 			$('#dope').val('');
 		var str='';
@@ -27,8 +27,8 @@
 	})
 	//随机产生一条回复
 	function answers(){
-		var arr=["你好","今天天气很棒啊","你吃饭了吗？","我最美我最美","我是可爱的小星星","你们忍心这样子对我吗？","我在和星星的孩子做游戏，稍后回复。","我不管，我最帅，我是你们的小可爱","好吧","么么哒","馒头：嗷","Bear with me出了新的游戏，快去看看吧。","负责人小姐姐，最近有什么新的活动可以参加么，我也想为星星的孩子做点什么。"
-,"<img src='img/15.gif'>","<img src='img/13.gif'>","<img src='img/9.gif'>","<img src='img/25.gif'>","<img src='img/38.gif'>","<img src='img/46.gif'>","<img src='img/51.gif'>","<img src='img/68.gif'>","<img src='img/38.gif'>","<img src='img/84.gif'>","<img src='img/33.gif'>","<img src='img/66.gif'>","<img src='img/22.gif'>","<img src='img/16.gif'>","<img src='img/86.gif'>","<img src='img/91.gif'>","<img src='img/73.gif'>","<img src='img/49.gif'>"];
+		var arr=["Hi!","Nice day, isn't it?","How's it going?","I'm super cute!","I'm a lovely star.","Don't leave me alone!","I'm playing games with children of stars, see you later~","I'm the coolest one in this room.","Okay.","Kiss me~","Yep?","Let's go and take a look at Bear With Me.","Is there any activities for me?"
+,"<img src='img/15.gif'>","<img src='img/13.gif'>","<img src='img/9.gif'>","<img src='img/25.gif'>","<img src='img/38.gif'>","<img src='img/46.gif'>","<img src='img/51.gif'>","<img src='img/68.gif'>","<img src='img/38.gif'>","<img src='img/84.gif'>","<img src='img/33.gif'>","<img src='img/66.gif'>","<img src='img/22.gif'>","<img src='img/16.gif'>"];
 		var aa=Math.floor((Math.random()*arr.length));
 		var answer='';
 		answer+='<li>'+
