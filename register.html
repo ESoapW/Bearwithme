@@ -23,32 +23,32 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript" src="js/demo.js"></script>
-  
-<script type="text/javascript"> 
-    function play(){ 
-    document.getElementById("menu_item").style.display = ""; 
-    } 
-    function noplay(){ 
-    document.getElementById("menu_item").style.display = "none"; 
-    } 
-    function passwd(){ 
-    var pass = document.getElementById("password").value; 
-    var tip = document.getElementById("tip"); 
-    if (pass.length < 4) { 
-    document.getElementById("meter").value = pass.length; 
-    tip.innerHTML = "差"; 
-    } 
-    else 
-    if (pass.length <= 8) { 
-    document.getElementById("meter").value = pass.length; 
-    tip.innerHTML = "中"; 
-    } 
-    else { 
-    document.getElementById("meter").value = pass.length; 
-    tip.innerHTML = "高"; 
-    } 
-    } 
-    </script> 
+
+<script type="text/javascript">
+    function play(){
+    document.getElementById("menu_item").style.display = "";
+    }
+    function noplay(){
+    document.getElementById("menu_item").style.display = "none";
+    }
+    function passwd(){
+    var pass = document.getElementById("password").value;
+    var tip = document.getElementById("tip");
+    if (pass.length < 4) {
+    document.getElementById("meter").value = pass.length;
+    tip.innerHTML = "low";
+    }
+    else
+    if (pass.length <= 8) {
+    document.getElementById("meter").value = pass.length;
+    tip.innerHTML = "medium";
+    }
+    else {
+    document.getElementById("meter").value = pass.length;
+    tip.innerHTML = "high";
+    }
+    }
+    </script>
 
 </head>
 
@@ -69,37 +69,37 @@
         </span>
         <ul class="right hide-on-med-and-down">
             <li>
-                <a href="login.html">登录/<span class="pink-text text-lighten-2">注册</span></a>
+                <a href="login.html">Sign in/<span class="pink-text text-lighten-2">Sign up</span></a>
               </li>
               <li>
-                <a href="kepu.html">科普</a>
+                <a href="kepu.html">Info</a>
               </li>
               <li>
-                <a href="活动首页.html">活动</a>
+                <a href="活动首页.html">Activity</a>
               </li>
               <li>
-                <a href="用户中心.html">个人中心</a>
+                <a href="用户中心.html">Account</a>
               </li>
               <li>
-                <a href="我的羁绊.html">我的羁绊</a>
+                <a href="我的羁绊.html">Chat</a>
               </li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
             <li>
-                <a href="login.html">登录/注册</a>
+                <a href="login.html">Sign in/Sign up</a>
               </li>
               <li>
-                <a href="kepu.html">科普</a>
+                <a href="kepu.html">Info</a>
               </li>
               <li>
-                <a href="活动首页.html">活动</a>
+                <a href="活动首页.html">Activity</a>
               </li>
               <li>
-                <a href="用户中心.html">个人中心</a>
+                <a href="用户中心.html">Account</a>
               </li>
               <li>
-                <a href="我的羁绊.html">我的羁绊</a>
+                <a href="我的羁绊.html">Chat</a>
               </li>
 
         </ul>
@@ -115,9 +115,9 @@
       <img src="img/signup_10.jpg" style="height: 32px;">
       <div class="input-field inline">
         <input id="email_inline" type="email" class="validate">
-        <label for="email_inline">用户名</label>
+        <label for="email_inline">Username</label>
       </div>
-      
+
     </div>
     <div class="col  s2 l3"></div>
   </div>
@@ -128,8 +128,8 @@
       <img src="img/signup_12.jpg" style="height: 28px;">
       <div class="input-field inline">
         <input id="nickname" type="text" class="validate">
-          <label for="nickname">昵称</label>
-      </div>  
+          <label for="nickname">Nickname</label>
+      </div>
     </div>
     <div class="col s2 l3"></div>
   </div>
@@ -139,13 +139,13 @@
     <div class="col s10 l4">
       <img src="img/signup_07.jpg" style="height: 28px;">
       <div class="input-field inline">
-        
-<input type="password"  name="password" id="password" required="" onkeyup="passwd()"> 
-<label for="password">密码</label>
-<meter min="1" max="10" low="5" high="8" value="13" id="meter"> 
-</meter> 
-    <span id="tip">低</span> 
-      </div>  
+
+<input type="password"  name="password" id="password" required="" onkeyup="passwd()">
+<label for="password">Password</label>
+<meter min="1" max="10" low="5" high="8" value="13" id="meter">
+</meter>
+    <span id="tip">low</span>
+      </div>
  </div>
     <div class="col s2 l3"></div>
   </div>
@@ -155,8 +155,8 @@
 <div class="row">
   <div class="col s2 l5"></div>
   <div class="col s10 l4">
-    <a class="waves-effect waves-light btn white pink-text text-accent-2" style=" width: 80px; margin-right: 5px;margin-left: 20px;" href="login.html">登录</a>
-    <a class="waves-effect waves-light btn  pink accent-2" style="width: 80px; margin-left: 15px;" href="index.html">注册</a>
+    <a class="waves-effect waves-light btn white pink-text text-accent-2" style=" width: 100px; margin-right: 5px;margin-left: 20px;" href="login.html">Sign in</a>
+    <a class="waves-effect waves-light btn  pink accent-2" style="width: 100px; margin-left: 15px;" href="index.html">Sign up</a>
   </div>
   <div class="col  s2 l3"></div>
 </div>
